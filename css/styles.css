@@ -267,6 +267,33 @@ img {
   margin-bottom: 10px;
 }
 
+/* Work */
+
+.work-list-item {
+  position: relative;
+}
+
+.work-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 70px;
+  padding: 27px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--hero-text-color);
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+}
+
 /* Team */
 
 .team {
@@ -509,6 +536,45 @@ img {
 .work-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.work-text {
+  position: absolute;
+  height: 100%;
+  margin: 0;
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  bottom: 0;
+  color: var(--hero-text-color);
+  opacity: 0;
+}
+
+.work-link:hover .work-text {
+  opacity: 1;
+}
+
+.thumb-work-text::after {
+}
+
+.thumb-portfolio {
+  position: relative;
+}
+
+.thumb-portfolio::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+
+  opacity: 0;
+}
+
+.work-link:hover .thumb-portfolio::before {
+  opacity: 1;
 }
 
 /* Icons header */
