@@ -42,11 +42,7 @@
           <li class="contacts-item nav-item">
             <a href="mailto:info@devstudio.com" class="link link-nav"
               ><svg class="icon-envelope" width="16" height="12">
-                <use
-                  href="./img/icons.svg#icon-envelope"
-                  width="16"
-                  height="12"
-                ></use></svg
+                <use href="./img/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
@@ -65,7 +61,9 @@
       <section class="hero">
         <div class="container container-hero">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -140,7 +138,9 @@
                   alt="Чиїсь руки печатають на клавіатурі код, котра підключена до планшету і великого екрану"
                   width="370"
                 />
-                <div class="work-image">десктопні додатки</div>
+                <div class="work-image">
+                  <p class="image-text">десктопні додатки</p>
+                </div>
               </div>
             </li>
 
@@ -151,7 +151,9 @@
                   alt="Сидяча людина використовує ноутбук і тримає в лівій руці мобільний телефон"
                   width="370"
                 />
-                <div class="work-image">мобільні додатки</div>
+                <div class="work-image">
+                  <p class="image-text">мобільні додатки</p>
+                </div>
               </div>
             </li>
 
@@ -162,7 +164,9 @@
                   alt="Чиїсь руки за допомогою стилуса обирають колір з кольорового кругу на планшеті, знаходячись перед персональним комп'ютером"
                   width="370"
                 />
-                <div class="work-image">дизайнерські рішення</div>
+                <div class="work-image">
+                  <p class="image-text">дизайнерські рішення</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -448,6 +452,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-modal" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
